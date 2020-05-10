@@ -23,17 +23,23 @@ public class CollectionTestSuite {
 
     @Test
     public void testOddNumbersExterminatorEmptyList(){
+        //Given
         ArrayList<Integer> empty = new ArrayList<Integer>();
-        Assert.assertNull(exterminator.exterminate(empty));
+        //When
+        ArrayList<Integer> control = exterminator.exterminate(empty);
+        //Then
+        Assert.assertNull(control);
     }
 
     @Test
     public void testOddNumbersExterminatorNormalList(){
+        //Given
         ArrayList<Integer> normal = new ArrayList<Integer>(Arrays.asList((new Integer[]{1,2,3,4,5,6,7,8,9,10})));
-        ArrayList<Integer> test = exterminator.exterminate(normal);
-        for (Integer odd:test){
-            Assert.assertTrue(odd%2 == 0);
-        }
+        ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList((new Integer[]{2,4,6,8,10})));
+        //When
+        ArrayList<Integer> result = exterminator.exterminate(normal);
+        //Then
+        Assert.assertEquals(expected,result);
     }
 
 }
