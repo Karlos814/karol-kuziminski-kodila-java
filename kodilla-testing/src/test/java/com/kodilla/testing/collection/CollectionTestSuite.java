@@ -5,6 +5,7 @@ import org.junit.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class CollectionTestSuite {
     private static int testNumber = 1;
@@ -24,9 +25,9 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorEmptyList(){
         //Given
-        ArrayList<Integer> empty = new ArrayList<Integer>();
+        List<Integer> empty = new ArrayList<Integer>();
         //When
-        ArrayList<Integer> control = exterminator.exterminate(empty);
+        List<Integer> control = exterminator.exterminate(empty);
         //Then
         Assert.assertNull(control);
     }
@@ -34,10 +35,10 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorNormalList(){
         //Given
-        ArrayList<Integer> normal = new ArrayList<Integer>(Arrays.asList((new Integer[]{1,2,3,4,5,6,7,8,9,10})));
-        ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList((new Integer[]{2,4,6,8,10})));
+        List<Integer> normal = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        List<Integer> expected = Arrays.asList(2,4,6,8,10);
         //When
-        ArrayList<Integer> result = exterminator.exterminate(normal);
+        List<Integer> result = exterminator.exterminate(normal);
         //Then
         Assert.assertEquals(expected,result);
     }
