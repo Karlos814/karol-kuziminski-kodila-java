@@ -9,8 +9,6 @@ public class ArrayOperationsTestSuite {
     public void testGetAverage(){
         //Given
         int [] tab = new int [] {1, 22, 8, 6, 3, 6, 7, 8, 7, 10, 13, 121, 0, 14};
-        double sum = 0.0;
-
         double expected = 16.1428571;
 
         //When
