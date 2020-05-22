@@ -8,6 +8,7 @@ public class FirstChallenge {
            }
            return a / b;
        } catch (ArithmeticException e) {
+           System.out.println("U mustn't divide by zero");
            return 0;
        } finally {
            System.out.println("Task completed");
