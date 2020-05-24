@@ -8,19 +8,22 @@ public class FlightSearch {
     public void findFilght(Flight flight) throws RouteNotFoundException {
         Map<String, Boolean> airports = new HashMap<>();
         airports.put("XXX", true);
+        airports.put("BBB", false);
+        airports.put("MMM", false);
+        airports.put("KKK", true);
+        airports.put("SSS", true);
+        airports.put("WWW", true);
+        airports.put("PPP", true);
+        airports.put("OMG", true);
 
-        for (Map.Entry<String, Boolean> entry: airports.entrySet()) {
+        if (!(airports.containsKey(flight.getArrivalAirport()))) {
+            throw new RouteNotFoundException("Not found");
 
-            if (entry.getKey().equals(flight.getArrivalAirport()) && entry.getValue()) {
-                System.out.println("You can arrival to "+entry.getKey());
-
-            } else if (entry.getKey().equals(flight.getArrivalAirport()) && !entry.getValue()){
-                System.out.println("You can't arrival to "+entry.getKey());
-
-            } else {
-                throw new RouteNotFoundException("Airport not found");
-            }
+        }else {
+            airports.entrySet().stream()
+                    .filter(entry -> entry.getKey().equals(flight.getArrivalAirport()))
+                    .map(e -> e.getKey()+" airport serves the selected flight - "+e.getValue())
+                    .forEach(System.out::println);
         }
-
     }
 }
