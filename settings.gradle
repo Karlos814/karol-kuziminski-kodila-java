@@ -1,5 +1,5 @@
-rootProject.name = 'kodilaaaa-course'
+rootProject.name = 'kodilla-course'
 include 'kodilla-testing'
 include 'kodilla-stream'
-include 'kodilla-stream2'
-
+include 'kodilla-exception'
+include 'kodilla-good-patterns'
