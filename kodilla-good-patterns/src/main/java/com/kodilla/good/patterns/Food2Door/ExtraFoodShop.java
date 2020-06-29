@@ -12,7 +12,9 @@ public class ExtraFoodShop implements Provider {
     public void process(int amount, ProductType productType) {
         boolean isInStock = isAvailable(amount, productType);
          if(isInStock) {
-              
+
+
+
          }
 
     }
