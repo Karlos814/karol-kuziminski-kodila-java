@@ -1,6 +1,7 @@
 package com.kodilla.good.patterns.Food2Door;
 
 public class HealthyShop implements Provider {
+
     @Override
     public boolean isAvailable(int amount, ProductType productType) {
         return true;

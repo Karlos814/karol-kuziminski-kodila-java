@@ -10,6 +10,4 @@ public class OrdersServis {
         this.amount = amount;
         this.productType = productType;
     }
-
-
 }
