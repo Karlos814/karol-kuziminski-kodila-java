@@ -8,7 +8,7 @@ public class NewProduct extends ProductType {
 
     @Override
     public String toString() {
-        String info = "Dziś w promocji"+getName()+" w cenie"+getPrice();
+        String info = "Dziś w promocji "+getName()+" w cenie "+getPrice();
         return info;
     }
 }

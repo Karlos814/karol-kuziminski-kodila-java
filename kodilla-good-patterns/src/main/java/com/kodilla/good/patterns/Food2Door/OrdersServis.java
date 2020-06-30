@@ -10,4 +10,16 @@ public class OrdersServis {
         this.amount = amount;
         this.productType = productType;
     }
+
+    public Provider getProvider() {
+        return provider;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public ProductType getProductType() {
+        return productType;
+    }
 }

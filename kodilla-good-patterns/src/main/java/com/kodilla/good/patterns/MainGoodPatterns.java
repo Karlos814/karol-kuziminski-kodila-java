@@ -1,6 +1,8 @@
 package com.kodilla.good.patterns;
 
+import com.kodilla.good.patterns.Food2Door.*;
 import com.kodilla.good.patterns.challenges.*;
+import com.kodilla.good.patterns.challenges.InformationByMail;
 
 import java.util.stream.Collectors;
 
@@ -23,6 +25,10 @@ public class MainGoodPatterns {
 
         ProductOrderService productOrderService = new ProductOrderService(new InformationByMail(), new OrderService(), new DataBaseOrders());
         productOrderService.process(orderRequest);
+
+        // Modul 13.4
+        OrdersServis ordersServis = new OrdersServis(new GlutenFreeShop(), 231, new Eggs("Wolny wybieg", 12));
+        ordersServis.getProvider().process(ordersServis.getAmount(), ordersServis.getProductType(), new InformationBySMS());
 
     }
 }
