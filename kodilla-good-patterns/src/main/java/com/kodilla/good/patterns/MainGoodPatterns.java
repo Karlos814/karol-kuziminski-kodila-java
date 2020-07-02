@@ -1,6 +1,6 @@
 package com.kodilla.good.patterns;
 
-import com.kodilla.good.patterns.Food2Door.*;
+import com.kodilla.good.patterns.food2Door.*;
 import com.kodilla.good.patterns.challenges.*;
 import com.kodilla.good.patterns.challenges.InformationByMail;
 import com.kodilla.good.patterns.flights.FlightService;
