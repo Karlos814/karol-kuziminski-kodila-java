@@ -25,5 +25,7 @@ public class User {
         return login;
     }
 
-    public String getEmail() { return email; }
+    public String getEmail() {
+        return email;
+    }
 }

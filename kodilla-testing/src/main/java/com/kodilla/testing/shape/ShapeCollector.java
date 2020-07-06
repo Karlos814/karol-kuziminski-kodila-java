@@ -11,14 +11,14 @@ public class ShapeCollector {
 
     public boolean removeFigure(Shape shape) {
         boolean result = false;
-        if (figures.contains(shape)){
+        if (figures.contains(shape)) {
             figures.remove(shape);
             result = true;
         }
         return result;
     }
 
-    public Shape getFigure(int n){
+    public Shape getFigure(int n) {
         Shape figure = null;
         if (n >= 0 && n < figures.size()) {
             figure = figures.get(n);
@@ -26,8 +26,8 @@ public class ShapeCollector {
         return figure;
     }
 
-    public void showFigures(){
-        for (Shape figure:figures)
-        System.out.println("Name: "+figure.getShapeName()+" and area: "+figure.getField());
+    public void showFigures() {
+        for (Shape figure : figures)
+            System.out.println("Name: " + figure.getShapeName() + " and area: " + figure.getField());
     }
 }

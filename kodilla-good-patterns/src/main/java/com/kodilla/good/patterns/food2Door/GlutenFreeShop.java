@@ -10,7 +10,7 @@ public class GlutenFreeShop implements Provider {
     @Override
     public void process(int amount, ProductType productType, InformationService informationService) {
         boolean isInStock = isAvailable(amount, productType);
-        if(isInStock) {
+        if (isInStock) {
             informationService.sendMessage();
             InformationBySMS.sendPromotionMessage(new NewProduct("Kaszanka", 3.99));
         }

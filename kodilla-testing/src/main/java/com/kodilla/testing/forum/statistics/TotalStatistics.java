@@ -22,7 +22,7 @@ public class TotalStatistics {
         if (quantityOfUsers == 0 || quantityOfPosts == 0) {
             quantityOfPostsPerUser = 0.0;
         } else {
-            quantityOfPostsPerUser =  quantityOfPosts / (double) quantityOfUsers;
+            quantityOfPostsPerUser = quantityOfPosts / (double) quantityOfUsers;
         }
 
         //średnią liczbę komentarzy na użytkownika

@@ -23,13 +23,13 @@ public class FlightService {
 
     public List<Airport> searchIndirectFlight(Airport departure, Airport arrival) {
         List<Airport> indirectCity = new ArrayList<>();
-        if(!departure.searchTo(arrival)){
+        if (!departure.searchTo(arrival)) {
             indirectCity = flightDatabase.getAirports().stream()
                     .filter(d -> d.equals(departure))
                     .flatMap(a -> a.getDepartures().stream())
                     .filter(e -> e.searchTo(arrival))
                     .collect(Collectors.toList());
-        System.out.println(indirectCity);
+            System.out.println(indirectCity);
         } else {
             indirectCity.add(arrival);
         }

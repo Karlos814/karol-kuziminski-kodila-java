@@ -41,7 +41,7 @@ public class ShapeCollectorTestSuite {
         //Given
         ShapeCollector shapeCollector = new ShapeCollector();
         Shape square = new Square(10);
-        Shape triangle = new Triangle(2,3);
+        Shape triangle = new Triangle(2, 3);
         Shape circle = new Circle(10);
         shapeCollector.addFigure(square);
         shapeCollector.addFigure(triangle);
@@ -73,7 +73,7 @@ public class ShapeCollectorTestSuite {
         //Given
         ShapeCollector shapeCollector = new ShapeCollector();
         Shape square = new Square(10);
-        Shape triangle = new Triangle(2,3);
+        Shape triangle = new Triangle(2, 3);
         Shape circle = new Circle(10);
         shapeCollector.addFigure(square);
         shapeCollector.addFigure(triangle);

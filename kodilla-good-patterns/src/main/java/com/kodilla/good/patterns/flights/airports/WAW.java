@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public final class WAW implements Airport, AirportService {
     protected final static String city = "Warszawa";
-    protected static List <Airport> departures = new ArrayList<>();
+    protected static List<Airport> departures = new ArrayList<>();
 
     @Override
     public boolean searchTo(Airport city) {
@@ -47,6 +47,6 @@ public final class WAW implements Airport, AirportService {
 
     @Override
     public String toString() {
-        return "WAW ["+city+"]";
+        return "WAW [" + city + "]";
     }
 }

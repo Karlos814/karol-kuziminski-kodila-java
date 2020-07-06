@@ -19,10 +19,10 @@ public class FlightSearch {
         if (!(airports.containsKey(flight.getArrivalAirport()))) {
             throw new RouteNotFoundException("Not found");
 
-        }else {
+        } else {
             airports.entrySet().stream()
                     .filter(entry -> entry.getKey().equals(flight.getArrivalAirport()))
-                    .map(e -> e.getKey()+" airport serves the selected flight - "+e.getValue())
+                    .map(e -> e.getKey() + " airport serves the selected flight - " + e.getValue())
                     .forEach(System.out::println);
         }
     }

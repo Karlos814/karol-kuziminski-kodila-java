@@ -1,4 +1,5 @@
 package com.kodilla.good.patterns.challenges;
+
 import java.time.LocalDateTime;
 
 public class ProductOrderService {
@@ -15,7 +16,7 @@ public class ProductOrderService {
     public OrderDto process(final OrderRequest orderRequest) {
         boolean isRented = orderService.buy(orderRequest.getUser(), orderRequest.getProductType());
 
-        if(isRented) {
+        if (isRented) {
             informationService.sendMessage(orderRequest.getUser());
             orderRepository.addToDataBase(orderRequest.getUser(), orderRequest.getProductType(), orderRequest.getDateOfOrder());
             return new OrderDto(orderRequest.getUser());

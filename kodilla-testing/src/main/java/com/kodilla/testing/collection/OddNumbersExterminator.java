@@ -6,10 +6,10 @@ import java.util.List;
 
 public class OddNumbersExterminator {
 
-    public List<Integer> exterminate(List<Integer> numbers){
+    public List<Integer> exterminate(List<Integer> numbers) {
         if (numbers.isEmpty()) {
             return null;
-        }else {
+        } else {
             List<Integer> oddNumbers = new ArrayList<Integer>();
             for (Integer number : numbers) {
                 if (number % 2 == 0) {

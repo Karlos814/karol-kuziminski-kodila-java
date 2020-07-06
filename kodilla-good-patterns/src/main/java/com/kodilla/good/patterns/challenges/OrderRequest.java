@@ -22,5 +22,7 @@ public class OrderRequest {
         return dateOfOrder;
     }
 
-    public ProductType getProductType() { return productType; }
+    public ProductType getProductType() {
+        return productType;
+    }
 }

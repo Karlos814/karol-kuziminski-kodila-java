@@ -11,7 +11,7 @@ public class ExtraFoodShop implements Provider {
     @Override
     public void process(int amount, ProductType productType, InformationService informationService) {
         boolean isInStock = isAvailable(amount, productType);
-        if(isInStock) {
+        if (isInStock) {
             informationService.sendMessage();
         }
     }

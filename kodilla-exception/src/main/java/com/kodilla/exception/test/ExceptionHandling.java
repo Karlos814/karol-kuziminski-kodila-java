@@ -1,7 +1,7 @@
 package com.kodilla.exception.test;
 
 public class ExceptionHandling {
-    public void handling () {
+    public void handling() {
         SecondChallenge secondChallenge = new SecondChallenge();
 
         try {

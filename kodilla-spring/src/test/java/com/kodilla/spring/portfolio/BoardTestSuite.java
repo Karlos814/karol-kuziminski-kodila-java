@@ -22,8 +22,8 @@ public class BoardTestSuite {
         board.doneList.tasks.add("ZZZ");
         String tasksDone = board.doneList.tasks.get(0);
         //Then
-        System.out.println("Task to do: "+tasksToDo);
-        System.out.println("Task in progress: "+tasksInProgress);
-        System.out.println("Task done: "+tasksDone);
+        System.out.println("Task to do: " + tasksToDo);
+        System.out.println("Task in progress: " + tasksInProgress);
+        System.out.println("Task done: " + tasksDone);
     }
 }

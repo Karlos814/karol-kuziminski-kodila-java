@@ -8,6 +8,6 @@ public class InformationBySMS implements InformationService {
     }
 
     public static void sendPromotionMessage(NewProduct newProduct) {
-        System.out.println("Wysłanie SMS o nowych produktach "+newProduct.toString());
+        System.out.println("Wysłanie SMS o nowych produktach " + newProduct.toString());
     }
 }
