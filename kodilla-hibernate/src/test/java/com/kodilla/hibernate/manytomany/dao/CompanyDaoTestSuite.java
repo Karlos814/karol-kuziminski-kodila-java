@@ -97,7 +97,7 @@ public class CompanyDaoTestSuite {
 
         //When
         List<Employee> employeeLastname = employeeDao.employeeWithLastname("Smith");
-        List<Company> companyName = companyDao.companyNameWithTheFirstCharacters("Dat");
+        List<Company> companyName = companyDao.companyNameWithTheFirstCharacters("Gre");
 
         //Then
         Assert.assertEquals(1, employeeLastname.size());
