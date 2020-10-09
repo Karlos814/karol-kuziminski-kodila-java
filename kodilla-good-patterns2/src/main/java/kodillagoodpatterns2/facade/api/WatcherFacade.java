@@ -13,6 +13,6 @@ public class WatcherFacade {
 
     @Before("execution(* kodillagoodpatterns2.facade.api.OrderFacade.processOrder(..))" + "&&target(object)")
     public void logEvent(Object object) {
-        LOGGER.info("Method from class: " + object.getClass().getName());
+        LOGGER.info("Method from class:  " + object.getClass().getName());
     }
 }
