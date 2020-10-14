@@ -12,12 +12,13 @@ public class Product {
     private String name;
     private List<Item> items = new ArrayList<>();
 
-    public Product(){
+    public Product() {
     }
 
     public Product(String name) {
         this.name = name;
     }
+
     @Id
     @GeneratedValue
     @NotNull
