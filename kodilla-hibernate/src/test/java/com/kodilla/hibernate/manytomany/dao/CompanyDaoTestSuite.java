@@ -20,7 +20,7 @@ public class CompanyDaoTestSuite {
     EmployeeDao employeeDao;
 
     @Test
-    public void testSaveManyToMany(){
+    public void testSaveManyToMany() {
         //Given
         Employee johnSmith = new Employee("John", "Smith");
         Employee stephanieClarckson = new Employee("Stephanie", "Clarckson");
@@ -105,11 +105,11 @@ public class CompanyDaoTestSuite {
 
         //CleanUp
         try {
-                companyDao.deleteById(softwareMachineId);
-                companyDao.deleteById(dataMaestersId);
-                companyDao.deleteById(greyMatterId);
+            companyDao.deleteById(softwareMachineId);
+            companyDao.deleteById(dataMaestersId);
+            companyDao.deleteById(greyMatterId);
         } catch (Exception e) {
-                //do nothing
+            //do nothing
 
         }
     }

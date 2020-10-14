@@ -14,7 +14,7 @@ public class Item {
     private BigDecimal value;
     private Invoice invoice;
 
-    public Item(){
+    public Item() {
     }
 
     public Item(BigDecimal price, int quantity, BigDecimal value) {
@@ -44,6 +44,7 @@ public class Item {
     public void setProduct(Product product) {
         this.product = product;
     }
+
     @Column(name = "PRICE")
     public BigDecimal getPrice() {
         return price;
