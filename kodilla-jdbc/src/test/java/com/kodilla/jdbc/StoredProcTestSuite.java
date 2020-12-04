@@ -32,6 +32,7 @@ public class StoredProcTestSuite {
         assertEquals(0, howMany);
     }
 
+
     @Test
     public void testUpdateBestsellers() throws SQLException{
         //Given
