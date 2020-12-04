@@ -35,7 +35,7 @@ public final class Library extends Prototype {
     public Library deepCopy() throws CloneNotSupportedException {
         Library clonedLibrary = (Library) super.clone();
         clonedLibrary.books = new HashSet<>();
-        for(Book theBook : books) {
+        for (Book theBook : books) {
             clonedLibrary.getBooks().add(theBook);
         }
         return clonedLibrary;

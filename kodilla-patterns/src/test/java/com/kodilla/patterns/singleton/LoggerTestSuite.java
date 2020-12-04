@@ -7,11 +7,11 @@ public class LoggerTestSuite {
 
     @Test
     public void testGetLastLog() {
-    //Given
-    Logger.getInstance().log("testLog");
-    //When
-    String lastLog = Logger.getInstance().getLastLog();
-    //Then
+        //Given
+        Logger.getInstance().log("testLog");
+        //When
+        String lastLog = Logger.getInstance().getLastLog();
+        //Then
         Assert.assertEquals("testLog", lastLog);
     }
 }

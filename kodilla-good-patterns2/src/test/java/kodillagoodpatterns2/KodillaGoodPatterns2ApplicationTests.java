@@ -1,13 +1,13 @@
-package com.crud.tasks;
+package kodillagoodpatterns2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TasksApplicationTests {
+class KodillaGoodPatterns2ApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
