@@ -24,6 +24,7 @@ public final class Bigmac {
             this.sauce = sauce;
             return this;
         }
+
         public BigmacBuilder burgers(int burgers) {
             this.burgers = burgers;
             return this;

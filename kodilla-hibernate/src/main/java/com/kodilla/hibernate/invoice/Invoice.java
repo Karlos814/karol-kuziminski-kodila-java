@@ -12,7 +12,7 @@ public class Invoice {
     private String number;
     private List<Item> items = new ArrayList<>();
 
-    public Invoice(){
+    public Invoice() {
     }
 
     public Invoice(String number) {

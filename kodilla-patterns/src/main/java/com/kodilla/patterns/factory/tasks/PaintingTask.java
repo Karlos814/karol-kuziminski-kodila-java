@@ -16,7 +16,7 @@ public final class PaintingTask implements Task {
     @Override
     public String executeTask() {
         executed = true;
-        return "Paint"+whatToPaint+color;
+        return "Paint" + whatToPaint + color;
     }
 
     @Override

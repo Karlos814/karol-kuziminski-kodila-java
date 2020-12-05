@@ -16,7 +16,7 @@ public class DrivingTask implements Task {
     @Override
     public String executeTask() {
         executed = true;
-        return "Driving to"+where+" by "+using;
+        return "Driving to" + where + " by " + using;
     }
 
     @Override

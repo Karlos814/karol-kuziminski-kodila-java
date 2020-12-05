@@ -11,6 +11,11 @@ import java.util.List;
         resultClass = Company.class
 )
 
+@NamedQuery(
+        name = "Company.findByAnyChar",
+        query = "FROM Company c WHERE c.name LIKE concat('%',:WORD,'%')"
+)
+
 @Entity
 @Table(name = "COMPANIES")
 public final class Company {
